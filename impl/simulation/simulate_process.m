@@ -20,6 +20,8 @@
 %  (11) - delta_G
 %  (12) - X
 
+% example:
+% simulate_process([0.95 0.025 0 0 0.025 0 0], [0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.1], 1, 365)
 
 
 function [ state ] = simulate_process(...
