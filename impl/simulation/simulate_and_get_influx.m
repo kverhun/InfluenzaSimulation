@@ -16,12 +16,10 @@
 %  (7)  - omega_I
 %  (8)  - omega_G
 %  (9)  - omega_IG
-%  (10) - delta_I
-%  (11) - delta_G
-%  (12) - X
+%  (10) - X
 
 % example:
-% simulate_and_get_influx([0.95 0.025 0 0 0.025 0 0], [0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.1], 1, 30, 360)
+% simulate_and_get_influx([0.95 0.025 0 0 0.025 0 0], [0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.1], 1, 30, 360)
 
 
 function [state, I, G ] = simulate_and_get_influx(...
