@@ -1,0 +1,15 @@
+function c = cost(...
+    vec_kappa, ... % vector
+    eff, ...
+    L, ...
+    c_kappa ...
+    )
+
+    start_state = [0.95 0.025 0 0 0.025 0 0];
+    for i = 1:18
+        if i >= 10 && i
+        kappa = 
+        c = c_kappa(kappa) + risk(kappa, eff, start_state) * L;
+    end
+end
+

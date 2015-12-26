@@ -60,7 +60,7 @@ function [state, I, G ] = simulate_and_get_influx(...
 
         t = t + delta_t;
     end
-    state = current_state
+    state = current_state;
 end
 
 
