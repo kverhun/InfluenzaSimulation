@@ -1,0 +1,21 @@
+function [R_I, state] = risk(...
+    kappa, ... 
+    eff, ...
+    start_state ...
+    )
+
+    % simulation data
+    params = [0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.1 kappa eff];
+    delta_t = 1;
+    accumulation_period = 30;
+    period = 30;
+    
+    [state, R_I, ~] = simulate_and_get_influx(...
+        start_state, ... % start state
+        params,      ... % params: see above
+        delta_t,     ... % time step for simutation
+        accumulation_period, ...
+        period       ... % simulation time
+    );
+end
+

@@ -17,6 +17,8 @@
 %  (8)  - omega_G
 %  (9)  - omega_IG
 %  (10) - X
+%  (11) - kappa
+%  (12) - eff.
 
 % example:
 % simulate_and_get_influx([0.95 0.025 0 0 0.025 0 0], [0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.05 0.1], 1, 30, 360)
@@ -58,7 +60,7 @@ function [state, I, G ] = simulate_and_get_influx(...
 
         t = t + delta_t;
     end
-    state = current_state
+    state = current_state;
 end
 
 
